@@ -1,0 +1,67 @@
+{
+    "name": "akira/laravel-chat",
+    "description": "A modern, real-time chat system for Laravel applications with support for direct and group conversations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akira",
+            "email": "akira@example.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "chat",
+        "messaging",
+        "real-time",
+        "websockets",
+        "reverb"
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^12.0",
+        "illuminate/database": "^12.0",
+        "illuminate/events": "^12.0",
+        "illuminate/validation": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^v4.0.0",
+        "pestphp/pest-plugin-laravel": "^v4.0.0",
+        "phpstan/phpstan": "^2.0",
+        "larastan/larastan": "^3.0",
+        "rector/rector": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akira\\LaravelChat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akira\\LaravelChat\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akira\\LaravelChat\\ChatServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "test:coverage": "pest --coverage",
+        "test:type-coverage": "pest --type-coverage",
+        "phpstan": "phpstan analyse",
+        "rector": "rector process --dry-run",
+        "rector:fix": "rector process"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

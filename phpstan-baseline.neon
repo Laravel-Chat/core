@@ -1,0 +1,733 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Cannot call method create\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/CreateConversationAction.php
+
+		-
+			message: '#^Cannot call method find\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/CreateConversationAction.php
+
+		-
+			message: '#^Cannot cast mixed to int\.$#'
+			identifier: cast.int
+			count: 3
+			path: src/Actions/CreateConversationAction.php
+
+		-
+			message: '#^Cannot call method first\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/FindDirectConversationAction.php
+
+		-
+			message: '#^Cannot call method has\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/FindDirectConversationAction.php
+
+		-
+			message: '#^Cannot call method where\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/FindDirectConversationAction.php
+
+		-
+			message: '#^Cannot call method whereHas\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: src/Actions/FindDirectConversationAction.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Actions\\FindDirectConversationAction\:\:handle\(\) should return Akira\\LaravelChat\\Models\\Conversation\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Actions/FindDirectConversationAction.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Actions\\GetAvatarAction\:\:handle\(\) should return string\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Actions/GetAvatarAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/GetConversationMessagesAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/GetConversationMessagesAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:conversations\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Cannot access property \$id on Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Cannot access property \$name on Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Cannot call method get\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Cannot call method orderBy\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Cannot call method with\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Parameter \$participants of class Akira\\LaravelChat\\Support\\ValueObjects\\ConversationResult constructor expects array\<string, mixed\>, array\<mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Support\\Collection\<int,array\<string, mixed\>\>\:\:values\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: src/Actions/GetConversationsAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:conversations\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:showsActivityStatus\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Call to method canReceiveMessagesFrom\(\) on an unknown class Akira\\LaravelChat\\Models\\User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Call to method showsActivityStatus\(\) on an unknown class Akira\\LaravelChat\\Models\\User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Call to static method query\(\) on an unknown class Akira\\LaravelChat\\Models\\User\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method filter\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method flatMap\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method get\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method pluck\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method toArray\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 2
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method unique\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method whereHas\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method whereIn\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Cannot call method with\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Actions\\GetOnlineUsersAction\:\:handle\(\) has invalid return type Akira\\LaravelChat\\Models\\User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Actions\\GetOnlineUsersAction\:\:handle\(\) should return Illuminate\\Support\\Collection\<int, Akira\\LaravelChat\\Models\\User\> but returns Illuminate\\Support\\Collection\<\(int\|string\), mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Only iterables can be unpacked, mixed given\.$#'
+			identifier: arrayUnpacking.nonIterable
+			count: 2
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Parameter \$onlineUser of anonymous function has invalid type Akira\\LaravelChat\\Models\\User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Actions/GetOnlineUsersAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Actions/SendMessageAction.php
+
+		-
+			message: '#^Cannot call method find\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/SendMessageAction.php
+
+		-
+			message: '#^Cannot call method whereHas\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Actions/SendMessageAction.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Actions\\SendMessageAction\:\:handle\(\) has parameter \$metadata with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Actions/SendMessageAction.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/ValidateUserIsParticipantAction.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Config\\ChatConfig\:\:__construct\(\) has parameter \$conversationTypes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Config\\ChatConfig\:\:__construct\(\) has parameter \$messageTypes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Config\\ChatConfig\:\:getConversationTypes\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Config\\ChatConfig\:\:getMessageTypes\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \#1 \$abstract of function app expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$broadcastingChannelPrefix of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$broadcastingEnabled of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects bool, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$conversationModel of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$conversationParticipantModel of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$conversationParticipantsTable of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$conversationTypes of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$conversationsPerPage of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$conversationsTable of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$messageModel of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$messagePolicy of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects Akira\\LaravelChat\\Policies\\MessagePolicyContract\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$messageTypes of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$messagesPerPage of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects int, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$messagesTable of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Parameter \$userModel of class Akira\\LaravelChat\\Config\\ChatConfig constructor expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Config/ChatConfig.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Events/ConversationCreated.php
+
+		-
+			message: '#^Part \$prefix \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/Events/ConversationCreated.php
+
+		-
+			message: '#^Part \$this\-\>user\-\>id \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/Events/ConversationCreated.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Events/MessageReceived.php
+
+		-
+			message: '#^Cannot access property \$id on Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Events/MessageReceived.php
+
+		-
+			message: '#^Part \$prefix \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/Events/MessageReceived.php
+
+		-
+			message: '#^Part \$userId \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/Events/MessageReceived.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Events/MessageSent.php
+
+		-
+			message: '#^Cannot access property \$id on Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Events/MessageSent.php
+
+		-
+			message: '#^Cannot access property \$participants on Akira\\LaravelChat\\Models\\Conversation\|null\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: src/Events/MessageSent.php
+
+		-
+			message: '#^Part \$participant\-\>id \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 1
+			path: src/Events/MessageSent.php
+
+		-
+			message: '#^Part \$prefix \(mixed\) of encapsed string cannot be cast to string\.$#'
+			identifier: encapsedStringPart.nonString
+			count: 2
+			path: src/Events/MessageSent.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Facades\\Conversation has PHPDoc tag @method for method create\(\) parameter \#3 \$participantIds with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Facades/Conversation.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Facades\\Conversation has PHPDoc tag @method for method create\(\) return type with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Facades/Conversation.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Facades\\Conversation has PHPDoc tag @method for method getUserConversations\(\) return type with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Facades/Conversation.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Facades\\Message has PHPDoc tag @method for method getConversationMessages\(\) return type with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Facades/Message.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Facades\\Message has PHPDoc tag @method for method markAsRead\(\) parameter \#3 \$messageIds with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Facades/Message.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Facades\\Message has PHPDoc tag @method for method send\(\) parameter \#5 \$metadata with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Facades/Message.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Attribute class Illuminate\\Database\\Eloquent\\Attributes\\Scope does not exist\.$#'
+			identifier: attribute.notFound
+			count: 2
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Call to function assert\(\) with true will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Models\\Conversation uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\Conversation\:\:__construct\(\) has parameter \$attributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\Conversation\:\:latestMessage\(\) should return Illuminate\\Database\\Eloquent\\Relations\\HasOne\<Akira\\LaravelChat\\Models\\Message, \$this\(Akira\\LaravelChat\\Models\\Conversation\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\HasOne\<Illuminate\\Database\\Eloquent\\Model, \$this\(Akira\\LaravelChat\\Models\\Conversation\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\Conversation\:\:messages\(\) should return Illuminate\\Database\\Eloquent\\Relations\\HasMany\<Akira\\LaravelChat\\Models\\Message, \$this\(Akira\\LaravelChat\\Models\\Conversation\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany\<Illuminate\\Database\\Eloquent\\Model, \$this\(Akira\\LaravelChat\\Models\\Conversation\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:belongsToMany\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:hasMany\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:hasOne\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Parameter \#2 \$table of method Illuminate\\Database\\Eloquent\\Model\:\:belongsToMany\(\) expects string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:belongsToMany\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:hasMany\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:hasOne\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: src/Models/Conversation.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\ConversationParticipant\:\:__construct\(\) has parameter \$attributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Models/ConversationParticipant.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\ConversationParticipant\:\:conversation\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<Akira\\LaravelChat\\Models\\Conversation, \$this\(Akira\\LaravelChat\\Models\\ConversationParticipant\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<Illuminate\\Database\\Eloquent\\Model, \$this\(Akira\\LaravelChat\\Models\\ConversationParticipant\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/ConversationParticipant.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Models/ConversationParticipant.php
+
+		-
+			message: '#^Property Illuminate\\Database\\Eloquent\\Model\:\:\$table \(string\|null\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Models/ConversationParticipant.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\)$#'
+			identifier: argument.templateType
+			count: 2
+			path: src/Models/ConversationParticipant.php
+
+		-
+			message: '#^Attribute class Illuminate\\Database\\Eloquent\\Attributes\\Scope does not exist\.$#'
+			identifier: attribute.notFound
+			count: 1
+			path: src/Models/Message.php
+
+		-
+			message: '#^Class Akira\\LaravelChat\\Models\\Message uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: src/Models/Message.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\Message\:\:__construct\(\) has parameter \$attributes with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Models/Message.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Models\\Message\:\:conversation\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<Akira\\LaravelChat\\Models\\Conversation, \$this\(Akira\\LaravelChat\\Models\\Message\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<Illuminate\\Database\\Eloquent\\Model, \$this\(Akira\\LaravelChat\\Models\\Message\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/Message.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Models/Message.php
+
+		-
+			message: '#^Property Illuminate\\Database\\Eloquent\\Model\:\:\$table \(string\|null\) does not accept mixed\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Models/Message.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\)$#'
+			identifier: argument.templateType
+			count: 2
+			path: src/Models/Message.php
+
+		-
+			message: '#^Cannot call method exists\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Policies/FollowerMessagePolicy.php
+
+		-
+			message: '#^Cannot call method where\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Policies/FollowerMessagePolicy.php
+
+		-
+			message: '#^Cannot call method whereHas\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Policies/FollowerMessagePolicy.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Policies\\FollowerMessagePolicy\:\:canReceiveMessage\(\) should return bool but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Policies/FollowerMessagePolicy.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Policies\\FollowerMessagePolicy\:\:haveExistingConversation\(\) should return bool but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Policies/FollowerMessagePolicy.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Support\\ConversationManager\:\:getOrCreateDirect\(\) should return Akira\\LaravelChat\\Models\\Conversation\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/ConversationManager.php
+
+		-
+			message: '#^Parameter \#3 \$participantIds of method Akira\\LaravelChat\\Actions\\CreateConversationAction\:\:handle\(\) expects array\<int\>, array\<int, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Support/ConversationManager.php
+
+		-
+			message: '#^Method Akira\\LaravelChat\\Support\\MessageManager\:\:send\(\) has parameter \$metadata with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Support/MessageManager.php
+
+		-
+			message: '#^Trait Akira\\LaravelChat\\Traits\\HasConversations is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/HasConversations.php
